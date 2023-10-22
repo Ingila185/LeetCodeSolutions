@@ -25,23 +25,15 @@ var lengthOfLongestSubstring = function(s) {
         left = left + 1;
         currentWindow = s.substring(left, right+1)
       }
-    
-    
       }
-    
       else
       { 
         //Character doesnt exist. keep expanding the window 
       currentWindow = s.substring(left, right+1)
-     
       }
-    
-    
     max = Math.max(max, currentWindow.length)
     }
-    
     return max;
-    
     };
     
     function isCurrentWindowContainsDupes(current)
